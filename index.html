@@ -21,6 +21,41 @@
                 padding: 18px;
             }
         }
+
+        div {
+            background: #D60021;
+            box-sizing: border-box;
+        }
+
+        .large {
+            height: 116px;
+            padding: 12px 18px;
+        }
+
+        .small {
+            height: 60px;
+            padding: 6px;
+        }
+
+        h1, h2, p {
+            margin-left: 20px;
+            font-family: sans-serif;
+        }
+
+        h1, h2 {
+            
+            font-weight: normal;
+            font-size: 1.2em;            
+            
+            margin-top: 2em;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -28,7 +63,22 @@
     <header>
         <a href="#"><img src="small.svg" alt=""></a>    
     </header>
+
+    <h1>Responsive logo</h1>
+
+    <p>Resize the browser-window to see the effect on the logo above. The two versions below have static heights for browser-testing purposes.</p>
+
+    <h2>Large version</h2>
+
+    <div class="large">
+        <img src="small.svg" alt="">
+    </div>
+
+    <h2>Small version</h2>
     
+    <div class="small">
+        <img src="small.svg" alt="">
+    </div>
     
 
 </body>
