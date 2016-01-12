@@ -5,9 +5,6 @@
     <defs>
         <style type="text/css">
             @media screen and (max-height: 48px) {
-                #sign {
-                    display: block;
-               }
                 #fisherman {
                     display: none;
                 }
@@ -15,10 +12,7 @@
             @media screen and (min-height: 49px) {
                 #sign {
                     display: none;
-                }
-                #fisherman {
-                    display: block;
-                }                
+                }            
             }
         </style>
     </defs>
