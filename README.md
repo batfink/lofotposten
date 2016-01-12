@@ -1,1 +1,3 @@
 # lofotposten
+
+Responsive svg
