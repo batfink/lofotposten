@@ -52,15 +52,37 @@
             text-transform: uppercase;
         }
 
+        a {
+            display: block;
+            height: 100%;
+            z-index: 1;            
+            position: relative;
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;            
+        }
+
+        object {            
+            width: 100%;
+            height: inherit;
+            pointer-events: none;            
+        }
 
 
     </style>
 </head>
 <body>
 
-    <header>
-        <!-- <img src="small.svg" alt=""> -->
-        <object type="image/svg+xml" data="small.svg"></object>
+    <header>        
+        <a href="http://www.ba.no">
+            <object type="image/svg+xml" data="small.svg"></object>
+        </a>
     </header>
 
     <h1>Responsive logo</h1>
@@ -70,17 +92,23 @@
     <h2>Large version</h2>
 
     <div class="large">
-        <object type="image/svg+xml" data="small.svg"></object>
-        <!-- <img src="small.svg" alt=""> -->
+        <a href="http://www.ba.no">
+            <object type="image/svg+xml" data="small.svg"></object>
+        </a>     
     </div>
 
     <h2>Small version</h2>
     
     <div class="small">
-        <object type="image/svg+xml" data="small.svg"></object>
-        <!-- <img src="small.svg" alt=""> -->
+        <a href="http://www.ba.no"><object type="image/svg+xml" data="small.svg"></object></a>        
     </div>
     
+    <h2>Empty object-tag</h2>
+
+    <div class="small">
+        <a href="http://www.ba.no"><object type="image/svg+xml" data=""></object></a>        
+    </div>
+
 
 </body>
 </html>
